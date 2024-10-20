@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .hidden { display: none; }
+        .question { font-size: 20px; margin-top: 20px; }
+        .options { margin-top: 15px; }
+        .option { cursor: pointer; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Quiz App</h1>
+    
+    <!-- User Info Form -->
+    <div id="user-info">
+        <h2>Enter Your Details</h2>
+        <form id="user-form">
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            <input type="number" id="group" placeholder="Enter group number" required><br><br>
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz" class="hidden">
+        <div class="question">Question will appear here...</div>
+        <div class="options">
+            <button class="option">Option 1</button>
+            <button class="option">Option 2</button>
+            <button class="option">Option 3</button>
+            <button class="option">Option 4</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
